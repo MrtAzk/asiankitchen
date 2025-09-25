@@ -82,6 +82,7 @@ const menu = [
   },
 ];
 
+//Giving a variable to all buttons and adding stlyes
 let btnContain=document.getElementById("btn-container");
 let allBtn = document.createElement("button");
 allBtn.classList.add("text-black", "border", "border-black", "rounded","p-3");
@@ -115,11 +116,14 @@ chinaBtn.addEventListener("click", () => showMenuItems("China"));
 
 let itemAll=document.getElementById("All");
 let itemKorea=document.getElementById("Korea");
+let itemJapan = document.getElementById("Japan");
+let itemChina = document.getElementById("China");
 
+//Its a method to take all menü 
 
 menu.forEach(item => {
   const menuItemAll = document.createElement("div");
-  menuItemAll.className = "w-1/2 px-4 mb-6"; // biraz daha alt boşluk
+  menuItemAll.className = "w-1/2 px-4 mb-6"; 
 
   menuItemAll.innerHTML = `
     <div class="flex items-start gap-6 border-b border-black  pb-6">
@@ -137,6 +141,7 @@ menu.forEach(item => {
   itemAll.appendChild(menuItemAll);
 });
 
+//Its a method to take just Korean  menü 
 
 itemsKorea = menu.filter(item => item.category === "Korea");
 
@@ -159,8 +164,8 @@ itemsKorea.forEach(item => {
 
   itemKorea.appendChild(menuItemKorea);
 });
+//Its a method to take just Japan  menü 
 
-let itemJapan = document.getElementById("Japan");
 itemsJapan = menu.filter(item => item.category === "Japan");
 
 itemsJapan.forEach(item => {
@@ -183,8 +188,8 @@ itemsJapan.forEach(item => {
   itemJapan.appendChild(menuItemJapan);
 });
 
+//Its a method to take just China menü
 
-let itemChina = document.getElementById("China");
 itemsChina = menu.filter(item => item.category === "China");
 
 itemsChina.forEach(item => {
