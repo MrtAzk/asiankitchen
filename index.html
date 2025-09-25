@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asian Kitchen</title>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Zilla+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-6">
+      <section class="menu">
+        <!-- title -->
+        <div class="title text-center mb-6">
+          <h2 class="text-3xl font-bold">Asian Kitchen's Menu</h2>
+        </div>
+
+        <!-- filter buttons -->
+        <div id="btn-container" class="flex justify-center gap-4 mb-6 flex-wrap "></div>
+
+        <!-- menu items -->
+        <div class="flex ">
+            <div id="All" class="flex flex-wrap -mx-4 w-full m-5 "></div>
+           <div id="Korea" class="hidden flex flex-wrap  w-full"></div> 
+           <div id="Japan" class="hidden flex flex-wrap  w-full"></div> 
+           <div id="China" class="hidden flex flex-wrap  w-full"></div>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
